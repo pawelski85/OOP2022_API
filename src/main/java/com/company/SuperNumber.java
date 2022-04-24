@@ -16,11 +16,21 @@ public class SuperNumber<T extends Number> {
     public double doubleValues(T value){
         return value.doubleValue();
     }
+
     public int intValues(T value){
         return value.intValue();
     }
+
+    boolean isDoubleEqualInt(){
+        return value.doubleValue()==value.intValue();
+    }
+
     boolean isEqual(SuperNumber<?> ob){
         return value.doubleValue()==ob.value.intValue();
+    }
+
+    boolean isEqual2(SuperNumber<?> ob){
+        return value.intValue()==ob.value.doubleValue();
     }
 
 

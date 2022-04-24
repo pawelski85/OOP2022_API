@@ -30,10 +30,14 @@ public class Main {
 
         //TASK 15
         SuperNumber<Double> superNumber = new SuperNumber<>(3.0);
+        SuperNumber<Integer> superNumber2 = new SuperNumber<>(3);
+
         superNumber.prinValue(superNumber.value);
         System.out.println(superNumber.doubleValues(superNumber.value));
         System.out.println(superNumber.intValues(superNumber.value));
+        System.out.println(superNumber.isDoubleEqualInt());
         System.out.println(superNumber.isEqual(new SuperNumber<Integer>(4)));
+        System.out.println(superNumber2.isEqual2(new SuperNumber<Double>(3.0)));
 
 
     }
