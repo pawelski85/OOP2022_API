@@ -29,10 +29,11 @@ public class Main {
 
 
         //TASK 15
-        SuperNumber superNumber = new SuperNumber(3.0);
+        SuperNumber<Double> superNumber = new SuperNumber<>(3.0);
         superNumber.prinValue(superNumber.value);
         System.out.println(superNumber.doubleValues(superNumber.value));
         System.out.println(superNumber.intValues(superNumber.value));
+        System.out.println(superNumber.isEqual(new SuperNumber<Integer>(4)));
 
 
     }

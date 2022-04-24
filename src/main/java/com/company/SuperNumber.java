@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.function.BinaryOperator;
+
 public class SuperNumber<T extends Number> {
     T value;
 
@@ -16,6 +18,9 @@ public class SuperNumber<T extends Number> {
     }
     public int intValues(T value){
         return value.intValue();
+    }
+    boolean isEqual(SuperNumber<?> ob){
+        return value.doubleValue()==ob.value.intValue();
     }
 
 
