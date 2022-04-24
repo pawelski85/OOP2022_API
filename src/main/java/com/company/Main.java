@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -39,6 +40,11 @@ public class Main {
         System.out.println(superNumber.isEqual(new SuperNumber<Integer>(4)));
         System.out.println(superNumber2.isEqual2(new SuperNumber<Double>(3.0)));
 
+        //TASK 16
+        Container container = new Container(new ArrayList());
+        container.addToList(8);
+        container.addToList(5);
+        System.out.println("counter = " + Container.counter);
 
     }
 }
